@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+
+  db:
+    image: postgres:14.2-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: course_jdbc
+      POSTGRES_USER: yago
+      POSTGRES_PASSWORD: cuinho
+    ports:
+      - "5432:5432"
